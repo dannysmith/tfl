@@ -1,6 +1,8 @@
 require 'mechanize'
 require 'money'
 
+I18n.config.available_locales = :en
+
 module TFL
   class Client
     attr_accessor :username, :password
@@ -11,40 +13,18 @@ module TFL
       raise "You must provide a username & password" unless self.username && self.password
     end
 
-    def find_journeys(date, amount)
-      @recurse_limit ||= 0
-      journeys = journeys(on: date.to_date)
-      total    = total(on: date.to_date)
-      puts "does #{amount} == #{total}?"
-      if journeys.empty? || (Money.new(total, :gbp) != Money.new(amount, :gbp))
-        @recurse_limit += 1
-        if @recurse_limit > 7
-          @recurse_limit = 0
-          return []
-        end
-        return find_journeys(date - 1, amount)
-      else
-        @recurse_limit = 0
-        return journeys
-      end
-    end
-
     def journeys(filter = {})
       @journeys ||= []
       if filter[:on]
-        journeys_on_date(filter[:on])
+        journeys_on_date(filter[:on].to_date)
       else
         @journeys
       end
     end
 
     def total(filter = {})
-      if filter[:on]
-        js = journeys_on_date(filter[:on].to_date)
-        js ? js.sum{|j| j.fare} : Money.new(0, :gbp)
-      else
-        journeys.sum{|j| j.fare}
-      end
+      js = journeys(on: filter[:on])
+      js ? js.inject(0){ |sum, j| sum + j.fare } : Money.new(0, :gbp)
     end
 
     private
@@ -83,12 +63,12 @@ module TFL
       end
     end
 
-    def tx_dates
-      journeys.collect{|j| j.tx_date}.uniq
+    def dates
+      journeys.collect{|j| j.date}.uniq
     end
 
     def cached_periods
-      journeys.collect{|j| period_for_date(j.tx_date)}.uniq
+      journeys.collect{|j| period_for_date(j.date)}.uniq
     end
 
     def period_for_date(date)
@@ -96,21 +76,21 @@ module TFL
     end
 
     def journeys_on_date(date)
-      return journeys.select{|j| j.tx_date == date.to_date} if cached_periods.include?(period_for_date(date))
+      return journeys.select{|j| j.date == date.to_date} if cached_periods.include?(period_for_date(date))
       select_period(period_for_date(date))
       @page.search('.statements-list').each do |day_node|
         date = Date.parse(day_node.css('span[data-pageobject=statement-date]').text)
         day_node.search('.row').each do |journey_node|
           journey = Journey.new
-          journey.tx_date = date
-          journey.from    = journey_node.css('span[data-pageobject=journey-from]').text
-          journey.to      = journey_node.css('span[data-pageobject=journey-to]').text
-          journey.time    = journey_node.css('span[data-pageobject=journey-time]').text
-          journey.fare    = journey_node.css('span[data-pageobject=journey-fare]').text
+          journey.date = date
+          journey.from = journey_node.css('span[data-pageobject=journey-from]').text
+          journey.to   = journey_node.css('span[data-pageobject=journey-to]').text
+          journey.time = journey_node.css('span[data-pageobject=journey-time]').text
+          journey.fare = journey_node.css('span[data-pageobject=journey-fare]').text
           journeys << journey
         end
       end
-      return journeys.select{|j| j.tx_date == date.to_date}
+      return journeys.select{|j| j.date == date.to_date}
     end
   end
 end
