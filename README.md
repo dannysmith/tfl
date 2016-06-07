@@ -2,6 +2,8 @@
 
 This is an unoffical library for scraping Transport for London contactless website. Allows a user to get journey information by providing their TFL username and password. 
 
+This gem is not actively maintained, and thus has/will not be published to Rubygems.
+
 ## Todo
 
 - Currently this only looks up and returns journeys for the *first* contactless card.
@@ -12,16 +14,12 @@ This is an unoffical library for scraping Transport for London contactless websi
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'tfl'
+gem 'tfl', git: 'https://github.com/jameshill/tfl.git'
 ```
 
 And then execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install tfl
+    $ bundle install
 
 ## Usage
 
