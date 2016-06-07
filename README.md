@@ -1,6 +1,11 @@
 # TFL
 
-This is an unoffical library for scraping Transport for London contactless website. Allows a user to get journey information by providing their TFL username and password.
+This is an unoffical library for scraping Transport for London contactless website. Allows a user to get journey information by providing their TFL username and password. 
+
+## Todo
+
+- Currently this only looks up and returns journeys for the *first* contactless card.
+- It should be changed to return all the cards, and then to query specifically the journeys on each card.
 
 ## Installation
 
