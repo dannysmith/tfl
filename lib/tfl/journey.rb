@@ -1,6 +1,6 @@
 module TFL
   class Journey
-    attr_accessor :from, :to, :time, :fare, :date
+    attr_accessor :from, :to, :time, :fare, :date, :card_id
 
     def fare=(string)
       @fare = Money.new(string.gsub('£', '').to_f * 100, :gbp)

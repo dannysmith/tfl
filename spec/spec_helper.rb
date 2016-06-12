@@ -1,2 +1,5 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'tfl'
+require "bundler/setup"
+require "tfl"
+require 'fakeweb'
+require 'pry'

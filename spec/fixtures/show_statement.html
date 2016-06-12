@@ -1,0 +1,1027 @@
+
+
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]> <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]> <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en-gb" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48" href="/Content/tflGlobal/images/favicon.ico">
+    <link rel="icon" type="image/png" href="https://contactless.tfl.gov.uk/Content/tflGlobal/images/icons/favicon-32x32.png;wa2f2ff12cc06013a2" sizes="32x32">
+    <link rel="mask-icon" href="/Content/tflGlobal/images/icons/mask-icon.svg" color="#113b92" />
+    <link rel="apple-touch-icon" href="/Content/tflGlobal/images/icons/apple-touch-icon-v1.png">
+    <meta name="msapplication-TileImage" content="/Content/tflGlobal/images/icons/windows/large.png">
+    <meta name="msapplication-TileColor" content="#113b92">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="/bundles/tflSharedBootstrapCss?v=Wx53Mh8DqO_SR8NM1D6IXwGW64xWWVP8Dwq9C0KBAP01" rel="stylesheet"/>
+
+    <link href="/bundles/tflSharedThemeCss?v=afEEHs9GGX6k8UjRJDkKGPL1OrklpATxhxaQ9wPmZ3A1" rel="stylesheet"/>
+
+    <link href="/bundles/cascStyles?v=EnuMILagKW7rhwLDDN3sMtDCPqnz3zPTr_6V3z6T75I1" rel="stylesheet"/>
+
+    <script src="/bundles/toploadingScripts?v=DW0kou8JBrRo-30HHmLztr81Ae9KaBXxG7Ouvyt-zN81"></script>
+
+    <!--[if lt IE 9]>
+        <script src="https://contactless.tfl.gov.uk/Scripts/vendor/html5shiv-3.7.2.min.js;wa3b309e9b22d9fad3"></script>
+        <script src="https://contactless.tfl.gov.uk/Scripts/vendor/respond-1.4.2.min.js;waa9239317aa1d5d2f"></script>
+    <![endif]-->
+
+    <title>Journey &amp; payment history - My Account - Transport for London</title>
+
+
+</head>
+<body data-controller="statements" data-action="showStatement">
+    <a href="#mainnav" class="sr-only sr-only-focusable">Skip to site navigation</a>
+    <a href="#pageNavigation" class="sr-only sr-only-focusable">Skip to page navigation</a>
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to content</a>
+    <a href="#footer" class="sr-only sr-only-focusable">Skip to footer</a>
+        <img alt="KeepAlive" style="display: none;" src="https://account.tfl.gov.uk/Home/KeepAlive" />
+
+    <nav class="navbar navbar-default" id="mainnav" tabindex="-1">
+    <div class="container" id="cookie-policy-notice">
+        <div class="row">
+            <div id="cookie-policy-text" class="col-xs-10">
+                <p>The TfL website uses cookies. By continuing to access the site you are agreeing to their use. <a class="link2" href="https://tfl.gov.uk/corporate/privacy-and-cookies/cookies">Learn more about cookies</a></p>
+            </div>
+            <div class="col-xs-2 text-right" id="cookie-policy-button">
+                <a href="javascript:void(0)"><span class="font-close" aria-hidden="true"><span class="sr-only">Close</span></span></a>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="mayorLogoRow">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-right">
+                        <img alt="" src="/Content/casc/images/blank.gif" class="image-logos-mol-white-small">
+                        <span class="sr-only">Mayor of London</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="navbar-container">
+                <div class="navbar-header"><button id="nav-toggle-search" type="button" class="toggle-search collapsed visible-xs-block visible-sm-block" data-toggle="collapse" data-target="#searchform" aria-expanded="false" aria-controls="searchform" data-alt="Open Search"><span class="font-search"></span>&nbsp;<span class="font-small-down-arrow pull-right"></span><span class="sr-only">toggle search</span></button> <button id="nav-toggle-menu" type="button" class="navbar-toggle collapsed hidden-sm" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" data-alt="Open Menu"><span class="sr-only">toggle</span><span>Menu&nbsp;</span><span class="font-small-down-arrow pull-right"></span></button> <a class="navbar-brand" href="https://tfl.gov.uk/"><img src="/Content/casc/images/blank.gif" class="image-logos-tfl-white-large hidden-xs" alt=""><img src="/Content/casc/images/blank.gif" class="image-logos-tfl-white-mobile visible-xs-inline-block" alt=""> <span class="sr-only">Transport for London</span></a></div>
+                <div id="navbar" class="navbar-collapse collapse navbar-left">
+                    <ul class="nav navbar-nav clearfix">
+                        <li class="active"><a href="https://tfl.gov.uk/plan-a-journey/">Plan a journey</a></li>
+                        <li><a href="https://tfl.gov.uk/status-updates/">Status updates</a></li>
+                        <li><a href="https://tfl.gov.uk/maps_/maps">Maps</a></li>
+                        <li><a href="https://tfl.gov.uk/fares-and-payments/">Fares &amp; payments</a></li>
+                        <li><button id="nav-toggle-more" type="button" class="collapsed btn btn-link" data-toggle="collapse" data-target="#more-menu" aria-expanded="false" aria-controls="more-menu"><span class="sr-only">Toggle page navigation</span>More...&nbsp;<span class="font-small-down-arrow" aria-hidden="true"></span></button></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="searchform" role="search" class="navbar-collapse collapse navbar-right">
+                <form class="navbar-form" action="https://tfl.gov.uk/search/" method="GET">
+                    <div class="form-group">
+                        <div class="input-group"><label for="q" class="sr-only">Search the site</label> <input id="q" name="q" autocomplete="off" type="text" class="form-control" placeholder="Search"> <span class="input-group-btn"><button id="search-button" class="btn btn-link" type="submit"><span class="font-search"></span><span class="sr-only">Search</span></button></span></div>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    <div class="row collapse" id="more-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                <h2>Travel information</h2>
+                <ul class="clearfix">
+                    <li><a href="https://tfl.gov.uk/travel-information/visiting-london/" data-jumpback=".more a:first:visible">Visiting London</a></li>
+                    <li><a href="https://tfl.gov.uk/transport-accessibility/">Transport accessibility</a></li>
+                    <li><a href="https://tfl.gov.uk/travel-information/safety/">Safety</a></li>
+                    <li><a href="https://tfl.gov.uk/travel-information/improvements-and-projects/">Improvements &amp; projects</a></li>
+                    <li><a href="https://tfl.gov.uk/travel-information/timetables/">Timetables</a></li>
+                    <li><a href="https://tfl.gov.uk/travel-information/stations-stops-and-piers/">Stations, stops &amp; piers</a></li>
+                        <li><a href="https://tfl.gov.uk/help-and-contact/">Help &amp; contact</a></li>
+                </ul>
+            </div>
+                <div class="col-sm-6">
+                <h2>Ways to get around</h2>
+                    <ul class="clearfix list-group row">
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/buses/">Buses</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/driving/">Driving</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/tube/">Tube</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/cycling/">Cycling</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/dlr/">DLR</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/london-overground/">London Overground</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/emirates-air-line/">Emirates Air Line</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/taxis-and-minicabs/">Taxis &amp; minicabs</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/trams/">Trams</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/river/">River</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/coaches/">Coaches</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/dial-a-ride/">Dial-a-Ride</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/tfl-rail/">TfL Rail</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/walking/">Walking</a></li>
+                </ul>
+            </div>
+                <div class="col-sm-3">
+                <h2>Quick links</h2>
+                <ul class="clearfix">
+                    <li><a href="https://tfl.gov.uk/modes/driving/congestion-charge">Congestion Charge</a></li>
+                    <li><a href="https://tfl.gov.uk/modes/cycling/santander-cycles">Santander Cycles</a></li>
+                    <li><a href="https://tfl.gov.uk/modes/driving/low-emission-zone">Low Emission Zone</a></li>
+                        <li><a href="https://tfl.gov.uk/fares-and-payments/replacements-and-refunds">Refunds &amp; replacements</a></li>
+                        <li><a href="https://tfl.gov.uk/fares-and-payments/oyster">Oyster</a></li>
+                        <li><a href="https://tfl.gov.uk/modes/driving/car-clubs">Car clubs</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</nav>
+
+
+    <div class="container" id="main-content">
+        <header>
+            <div class="row">
+                <div class="col-sm-7 hidden-xs">
+                    <ol class="breadcrumb" id="breadcrumb">
+
+
+<li class="home ">
+    <a href="https://tfl.gov.uk/" title="Transport for London - Home">
+        <span class="font-home" aria-hidden="true"></span>
+        <span class="sr-only">Home</span>
+    </a>
+</li>
+
+
+        <li><a href="/Dashboard">My Account</a></li>
+        <li class="last-child"><a href="/MyCards">Contactless</a></li>
+
+
+                    </ol>
+                </div>
+                <div class="col-sm-5 col-xs-12">
+                    <div class="text-right my-account-status">
+
+                                     <form method="POST" action="/HomePage/SignOut">
+                <input name="__RequestVerificationToken" type="hidden" value="ws7FO899O7PjbcO_kp1lGyUPayNQEkI_vQTOyMFku0wTDrSmbtnLfxRYQdPp_M8xRXFlCxc9aXQjokgsAWRP5DYwd_QTu6-gs09wHFPQS6M1" />
+                    <span id="user-logged-in" class="font-user" aria-hidden="true"></span> Welcome back, James (<button class="btn btn-link" type="submit">Sign out</button>)
+            </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="row" id="title-row">
+                        <div class="col-xs-10">
+
+    <h1 id="headingsimplelayout-pageheading">Journey &amp; payment history</h1>
+
+                        </div>
+                        <div class="col-xs-2 text-right">
+                                <img alt="" src="/Content/casc/images/blank.gif" class="image-logos-casc-mobile visible-xs-inline-block">
+                                <img alt="" src="/Content/casc/images/blank.gif" class=" image-logos-casc-large hidden-xs">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <div class="row">
+            <div class="col-sm-4 col-sm-push-8" id="page-navigation">
+
+
+<script>
+    tfl.csc.options.set('selectedNavItem', "navCardTravelStatement");
+</script>
+
+
+<div class="row visible-xs-block">
+    <div class="navbar-header col-xs-12" id="pageNavigationControl">
+        <button type="button" class="navbar-toggle collapsed btn btn-block" data-toggle="collapse" data-target="#pageNavigation" aria-expanded="false" aria-controls="pageNavigation">
+            <span class="sr-only">Toggle </span><span class="font-plus pull-right" aria-hidden="true"></span><span class="font-hamburger" aria-hidden="true"></span> Navigation
+        </button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <nav id="pageNavigation" class="panel list-group navbar-collapse collapse" tabindex="-1">
+            <a href="#page-content" class="sr-only sr-only-focusable">Skip page navigation</a>
+            <a href="/Dashboard" class=" list-group-item panel-title"><span class="font-right-arrow pull-right visible-xs-block" aria-hidden="true"></span><h4>My Account</h4></a>
+            <button id="navOysterCards" type="button" class="list-group-item selected-parent" data-toggle="collapse" data-target="#Oyster" aria-expanded="false" aria-controls="Oyster"><span class="font-plus pull-right" aria-hidden="true"></span>Oyster cards</button>
+
+            <div class="collapse list-group-submenu list-group-submenu-1" id="Oyster">
+                <a href="https://oyster.tfl.gov.uk/oyster/showCards.do?_o=KTaO6YfdBpIdcN8DLNDKgw%3D%3D" id="navMyOyster" class="list-group-item" data-parent="#Oyster"><span class="font-right-arrow pull-right" aria-hidden="true"></span>My Oyster cards</a>
+
+                <a href="https://oyster.tfl.gov.uk/oyster/userProfile.do?_o=KTaO6YfdBpIdcN8DLNDKgw%3D%3D" id="navDetails" class="list-group-item" data-parent="#Oyster"><span class="font-right-arrow pull-right" aria-hidden="true"></span>View/change my details</a>
+                <a href="https://oyster.tfl.gov.uk/oyster/changePin.do?_o=KTaO6YfdBpIdcN8DLNDKgw%3D%3D" id="navPin" class="list-group-item" data-parent="#Oyster"><span class="font-right-arrow pull-right" aria-hidden="true"></span>View/change PIN</a>
+                <a href="https://oyster.tfl.gov.uk/oyster/changePassword.do?_o=KTaO6YfdBpIdcN8DLNDKgw%3D%3D" id="navPassword" class="list-group-item" data-parent="#Oyster"><span class="font-right-arrow pull-right" aria-hidden="true"></span>Change my password</a>
+                <a href="https://oyster.tfl.gov.uk/oyster/orderHistory.do?_o=KTaO6YfdBpIdcN8DLNDKgw%3D%3D" class="list-group-item" id="navOrders" data-parent="#Oyster"><span class="font-right-arrow pull-right" aria-hidden="true"></span>Order history</a>
+
+                <a href="https://oyster.tfl.gov.uk/oyster/credit.do?_o=KTaO6YfdBpIdcN8DLNDKgw%3D%3D" id="navCredits" class="list-group-item" data-parent="#Oyster"><span class="font-right-arrow pull-right" aria-hidden="true"></span>Web credits</a>
+                <a href="https://oyster.tfl.gov.uk/oyster/refundHistory.do?_o=KTaO6YfdBpIdcN8DLNDKgw%3D%3D" class="list-group-item" id="navRefundHistory" data-parent="#Oyster"><span class="font-right-arrow pull-right" aria-hidden="true"></span>Refund history</a>
+                <a href="https://oyster.tfl.gov.uk/oyster/sdr.do?_o=KTaO6YfdBpIdcN8DLNDKgw%3D%3D" id="navSDR" class="list-group-item" data-parent="#Oyster"><span class="font-right-arrow pull-right" aria-hidden="true"></span>Service delay refunds</a>
+                <a href="https://oyster.tfl.gov.uk/oyster/cstp.do?_o=KTaO6YfdBpIdcN8DLNDKgw%3D%3D" id="navRefund" class="list-group-item" data-parent="#Oyster"><span class="font-right-arrow pull-right" aria-hidden="true"></span>Apply for a product refund</a>
+
+                <a href="https://tfl.gov.uk/help-and-contact/" class="list-group-item" data-parent="#Oyster"><span class="font-external pull-right" aria-hidden="true"></span>Oyster help</a>
+            </div>
+
+            <button id="navContactless" type="button" class="list-group-item selected-parent" data-toggle="collapse" data-target="#Contactless" aria-expanded="false" aria-controls="Contactless"><span class="font-plus pull-right" aria-hidden="true"></span>Contactless</button>
+            <div class="collapse list-group-submenu list-group-submenu-1" id="Contactless">
+                <a href="/MyCards" id="navMyContactlessCards" class="list-group-item" data-parent="#Contactless"><span class="font-right-arrow pull-right" aria-hidden="true"></span>My Contactless cards</a>
+
+                    <button type="button" class="list-group-item" data-toggle="collapse" data-target="#CurrentCard" aria-expanded="false" aria-controls="CurrentCard"><span class="font-plus pull-right" aria-hidden="true"></span><img src="/Content/casc/images/blank.gif" class="image-cards-mastercard-medium" alt="MasterCard" aria-hidden="true">ending in 1234
+                    </button>
+    <div class="collapse list-group-submenu list-group-submenu-1" id="CurrentCard" data-card-id="1wRXbW9Y4gzNpG8MhTorM2wRY1jg">
+        <a id="navCardOverview" href="/Card/View?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg" class="list-group-item"><span class="font-right-arrow pull-right"></span>Card overview</a>
+            <a id="navCardIncomplete" href="/Card/Refunds?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg" class="list-group-item"><span class="font-right-arrow pull-right"></span>Apply for incomplete journey refund</a>
+            <a id="navCardTravelStatement" href="/Statements/TravelStatement?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg" class="list-group-item"><span class="font-right-arrow pull-right"></span>Journey & payment history</a>
+            <a id="navCardRefundHistory" href="/Card/RefundHistory?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg" class="list-group-item"><span class="font-right-arrow pull-right"></span>View refund history</a>
+        <a id="navCardContact" href="/ContactUs/RegisteredCard?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg" class="list-group-item"><span class="font-right-arrow pull-right"></span>Contact us about this card</a>
+        <a id="navCardSDR" href="/ServiceDelayRefunds/Apply?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg" class="list-group-item"><span class="font-right-arrow pull-right"></span>Service delay refunds</a>
+        <a id="navCardRemove" href="/Card/Delete?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg" class="list-group-item"><span class="font-right-arrow pull-right"></span>Remove this card</a>
+    </div>
+                <a href="/MyCards/Hidden" id="navMyHiddenCards" class="list-group-item" data-parent="#Contactless"><span class="font-right-arrow pull-right" aria-hidden="true"></span>My hidden cards</a>
+
+            </div>
+            <a href="https://account.tfl.gov.uk/Profile" class="list-group-item"><span class="font-right-arrow pull-right" aria-hidden="true"></span>Personal details</a>
+        </nav>
+
+            </div>
+        </div>
+
+
+            </div>
+            <div class="col-sm-8 col-sm-pull-4" id="page-content">
+
+
+
+
+<div class="row">
+    <div class="col-md-12" id="card-heading">
+        <img src="/Content/casc/images/blank.gif" alt="" class="image-cards-mastercard-medium pull-left" aria-hidden="true">
+        <h2 id="selectedcard-name">ending in 1234</h2>
+    </div>
+</div>
+<div class="row">
+        <div class="col-md-12">
+        <ul class="nav nav-tabs">
+            <li role="presentation" id="travelstatement-paymenthistory-subheading" class="active"><a href="">Payment history</a></li>
+            <li role="presentation" id="travelstatement-journeyhistory-subheading"><a href="">Journey history</a></li>
+        </ul>
+        <p>
+            This view shows the travel charges that we have made to your contactless payment card. We
+            sometimes delay collecting payment as we wait for our system to update. To see all your journeys,
+            including those we have not yet charged you for, select the "Journey history" view above.
+        </p>
+        <p>
+            Any journeys made between 01:30 to 04:30 will not be displayed in your payment history until tomorrow.
+        </p>
+    </div>
+
+
+    <div class="col-md-8">
+<form action="/Statements/Refresh" id="filters" method="post"><input name="__RequestVerificationToken" type="hidden" value="p1GDKwISIUKg4vJvlj9MT946lgXqytT6zKSzxHmoB-Yga6HIZfL6o9floa0Jfcx_e0P_wBxtrZgbHvKcjFEB97N8uOujWFql01Do9deAGFA1" />            <div id="travelstatement-searchfilter-container">
+                <div id="cards-list-wrapper">
+                    <fieldset>
+                        <legend class="hidden">Showing for the following combination of card and date range</legend>
+                        <span class="icon card-icon vertically-centred"></span>
+                            <div class="form-group hidden">
+                                <label for="SelectedStatementType" class="control-label">
+                                    View by payments, journeys or refunds
+                                </label>
+                                <select class="form-control" id="SelectedStatementType" name="SelectedStatementType"><option value="Journeys">Journey History</option>
+<option selected="selected" value="Payments">Payment History</option>
+</select>
+                            </div>
+                            <div class="form-group">
+                                <label for="SelectedStatementPeriod" class="control-label">Date range</label>
+                                <select class="form-control" id="SelectedStatementPeriod" name="SelectedStatementPeriod"><option value="7">Last 7 days only</option>
+<option selected="selected" value="6|2016">This month</option>
+<option value="5|2016">May 2016</option>
+<option value="4|2016">April 2016</option>
+<option value="3|2016">March 2016</option>
+<option value="2|2016">February 2016</option>
+<option value="1|2016">January 2016</option>
+<option value="12|2015">December 2015</option>
+<option value="11|2015">November 2015</option>
+<option value="10|2015">October 2015</option>
+<option value="9|2015">September 2015</option>
+<option value="8|2015">August 2015</option>
+<option value="7|2015">July 2015</option>
+<option value="6|2015">June 2015</option>
+</select>
+                            </div>
+                            <div class="form-group " id="changeCardSelector">
+                                <label for="PaymentCardId" class="control-label">Select a card</label>
+                                <select class="form-control" id="PaymentCardId" name="PaymentCardId"><option selected="selected" value="1wRXbW9Y4gzNpG8MhTorM2wRY1jg">MasterCard - 1234</option>
+<option value="J16kuCuoJhMzHf8Bc0udT7iWJ0BU-">Visa - 5678</option>
+</select>
+                            </div>
+                        <div class="form-group text-right hidden">
+                            <button type="submit" class="btn btn-primary" value="Next Page">Next Page</button>
+                        </div>
+                    </fieldset>
+
+                </div>
+            </div>
+</form>    </div>
+
+    <div class="col-md-12">
+        <h2>Statement</h2>
+
+
+
+<div class="statements-list clearfix" data-pageobject="travelstatement-paymentsummary">
+    <div id="journey-date-heading-0" data-pageobject="statement-dateheading" tabindex="0" class="list-group-item journey-date-heading" data-toggle="collapse" data-target="#journey-0" aria-expanded="false" aria-controls="journey-0">
+        <span class="pull-right font-plus" aria-hidden="true"></span>
+            <img src="/Content/casc/images/blank.gif" data-pageobject="statement-icon"
+                 alt=" destination unknown" class="   warning-icon" aria-hidden="true">
+        <span data-pageobject="statement-date" class="date-link">10/06/2016</span>
+            <span class="pull-right" data-pageobject="travelstatement-billingdetail-priceheading">&#163;10.60 </span>
+    </div>
+    <div class="list-group collapse" id="journey-0" aria-labelledby="journey-date-heading-0">
+                <a href="/Statements/ViewJourney?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg&amp;ti=bGbJ8QY_tbOMcB1ZqKe80pops_0-&amp;st=Payments&amp;sp=6%7C2016&amp;ji=2gQHNFFi4sl6iFG9bu6C_pYIr_g-&amp;travelDayKey=13310" class="list-group-item journey-tile" data-pageobject="statement-detaillink">
+                    <div class="row" data-pageobject="statement-paymentrow">
+    <div class="col-xs-9">
+        <p>
+
+
+<span class="journey-icons" data-pageobject="journey-icons">
+
+</span>
+
+<span class="journey-to-from">
+            <span class="" data-pageobject="journey-from">East Putney</span>
+            <span>to</span>
+            <span class="" data-pageobject="journey-to">Old Street</span>
+</span>
+        </p>
+        <p><span class="journey-time" data-pageobject="journey-time">09:32 - 10:20</span>
+</p>
+
+    </div>
+    <div class="col-xs-3 text-right text-nowrap">
+            <span class="journey-fare" data-pageobject="journey-fare">&#163;2.40</span>
+
+    </div>
+</div>
+                </a>
+                <a href="/Refunds/ApplyFromStatement?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg&amp;ti=bGbJ8QY_tbOMcB1ZqKe80pops_0-&amp;st=Payments&amp;sp=6%7C2016&amp;ji=mF5R29JBVNwF9wsoD~pFZcQqxY4-&amp;travelDayKey=13310" class="list-group-item journey-tile" data-pageobject="statement-detaillink">
+                    <div class="row" data-pageobject="statement-paymentrow">
+    <div class="col-xs-9">
+        <p>
+
+
+<span class="journey-icons" data-pageobject="journey-icons">
+                <button class="btn btn-link warning-icon" type="button"
+                data-trigger="click focus hover"
+                data-container="body"
+                data-toggle="popover"
+                data-placement="right"
+                data-content="We have no record of where you touched in/out."
+                data-pageobject="journey-icon">
+            <span class="sr-only">We have no record of where you touched in/out.</span>
+        </button>
+
+</span>
+
+<span class="journey-to-from">
+            <span class="" data-pageobject="journey-from">Moorgate</span>
+            <span>to</span>
+            <span class="csc-error-text" data-pageobject="journey-to">Unknown</span>
+</span>
+        </p>
+        <p><span class="journey-time" data-pageobject="journey-time">15:08 - --:--</span>
+</p>
+
+    </div>
+    <div class="col-xs-3 text-right text-nowrap">
+            <span class="journey-fare" data-pageobject="journey-fare">&#163;2.40</span>
+
+    </div>
+</div>
+                </a>
+                <a href="/Refunds/ApplyFromStatement?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg&amp;ti=bGbJ8QY_tbOMcB1ZqKe80pops_0-&amp;st=Payments&amp;sp=6%7C2016&amp;ji=Y~0IdvqOkO~FdJ05~VGwJdMDwTk-&amp;travelDayKey=13310" class="list-group-item journey-tile" data-pageobject="statement-detaillink">
+                    <div class="row" data-pageobject="statement-paymentrow">
+    <div class="col-xs-9">
+        <p>
+
+
+<span class="journey-icons" data-pageobject="journey-icons">
+                <button class="btn btn-link warning-icon" type="button"
+                data-trigger="click focus hover"
+                data-container="body"
+                data-toggle="popover"
+                data-placement="right"
+                data-content="We have no record of where you touched in/out."
+                data-pageobject="journey-icon">
+            <span class="sr-only">We have no record of where you touched in/out.</span>
+        </button>
+
+</span>
+
+<span class="journey-to-from">
+            <span class="csc-error-text" data-pageobject="journey-from">Unknown</span>
+            <span>to</span>
+            <span class="" data-pageobject="journey-to">Gloucester Road</span>
+</span>
+        </p>
+        <p><span class="journey-time" data-pageobject="journey-time">--:-- - 16:47</span>
+</p>
+
+    </div>
+    <div class="col-xs-3 text-right text-nowrap">
+            <span class="journey-fare" data-pageobject="journey-fare">&#163;2.90</span>
+
+    </div>
+</div>
+                </a>
+                <a href="/Statements/ViewJourney?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg&amp;ti=bGbJ8QY_tbOMcB1ZqKe80pops_0-&amp;st=Payments&amp;sp=6%7C2016&amp;ji=KJbkKw4EAliNcy1dXRq8j5cvjNg-&amp;travelDayKey=13310" class="list-group-item journey-tile" data-pageobject="statement-detaillink">
+                    <div class="row" data-pageobject="statement-paymentrow">
+    <div class="col-xs-9">
+        <p>
+
+
+<span class="journey-icons" data-pageobject="journey-icons">
+
+</span>
+
+<span class="journey-to-from">
+            <span class="" data-pageobject="journey-from">South Kensington</span>
+            <span>to</span>
+            <span class="" data-pageobject="journey-to">East Putney</span>
+</span>
+        </p>
+        <p><span class="journey-time" data-pageobject="journey-time">18:23 - 18:45</span>
+</p>
+
+    </div>
+    <div class="col-xs-3 text-right text-nowrap">
+            <span class="journey-fare" data-pageobject="journey-fare">&#163;2.90</span>
+
+    </div>
+</div>
+                </a>
+
+
+
+
+
+
+    </div>
+</div>
+<div class="statements-list clearfix" data-pageobject="travelstatement-paymentsummary">
+    <div id="journey-date-heading-1" data-pageobject="statement-dateheading" tabindex="0" class="list-group-item journey-date-heading" data-toggle="collapse" data-target="#journey-1" aria-expanded="false" aria-controls="journey-1">
+        <span class="pull-right font-plus" aria-hidden="true"></span>
+            <img src="/Content/casc/images/blank.gif" data-pageobject="statement-icon"
+                 alt="fares capped " class="capped-icon-day  " aria-hidden="true">
+        <span data-pageobject="statement-date" class="date-link">06/06/2016</span>
+            <span class="pull-right" data-pageobject="travelstatement-billingdetail-priceheading">&#163;6.50 </span>
+    </div>
+    <div class="list-group collapse" id="journey-1" aria-labelledby="journey-date-heading-1">
+                <a href="/Statements/ViewJourney?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg&amp;ti=bGbJ8QY_tbOMcB1ZqKe80pops_0-&amp;st=Payments&amp;sp=6%7C2016&amp;ji=ZoAP0U~9F0sW7IoUUCWq~~XVBNg-&amp;travelDayKey=13306" class="list-group-item journey-tile" data-pageobject="statement-detaillink">
+                    <div class="row" data-pageobject="statement-paymentrow">
+    <div class="col-xs-9">
+        <p>
+
+
+<span class="journey-icons" data-pageobject="journey-icons">
+
+</span>
+
+<span class="journey-to-from">
+            <span class="" data-pageobject="journey-from">East Putney</span>
+            <span>to</span>
+            <span class="" data-pageobject="journey-to">Old Street</span>
+</span>
+        </p>
+        <p><span class="journey-time" data-pageobject="journey-time">09:21 - 10:09</span>
+</p>
+
+    </div>
+    <div class="col-xs-3 text-right text-nowrap">
+            <span class="journey-fare" data-pageobject="journey-fare">&#163;2.90</span>
+
+    </div>
+</div>
+                </a>
+                <a href="/Statements/ViewJourney?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg&amp;ti=bGbJ8QY_tbOMcB1ZqKe80pops_0-&amp;st=Payments&amp;sp=6%7C2016&amp;ji=6na5Heh_~HaWBtA6tL0MaPNm__U-&amp;travelDayKey=13306" class="list-group-item journey-tile" data-pageobject="statement-detaillink">
+                    <div class="row" data-pageobject="statement-paymentrow">
+    <div class="col-xs-9">
+        <p>
+
+
+<span class="journey-icons" data-pageobject="journey-icons">
+
+</span>
+
+<span class="journey-to-from">
+            <span class="" data-pageobject="journey-from">Moorgate</span>
+            <span>to</span>
+            <span class="" data-pageobject="journey-to">Goodge Street</span>
+</span>
+        </p>
+        <p><span class="journey-time" data-pageobject="journey-time">14:10 - 14:33</span>
+</p>
+
+    </div>
+    <div class="col-xs-3 text-right text-nowrap">
+            <span class="journey-fare" data-pageobject="journey-fare">&#163;2.40</span>
+
+    </div>
+</div>
+                </a>
+                <a href="/Statements/ViewJourney?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg&amp;ti=bGbJ8QY_tbOMcB1ZqKe80pops_0-&amp;st=Payments&amp;sp=6%7C2016&amp;ji=XDs44KSJ3ungpV5uRQSQInGGsyQ-&amp;travelDayKey=13306" class="list-group-item journey-tile" data-pageobject="statement-detaillink">
+                    <div class="row" data-pageobject="statement-paymentrow">
+    <div class="col-xs-9">
+        <p>
+
+
+<span class="journey-icons" data-pageobject="journey-icons">
+            <button class="btn btn-link capped-icon-day" type="button"
+                data-trigger="click focus hover"
+                data-container="body"
+                data-toggle="popover"
+                data-placement="right"
+                data-content="Some journeys were cheaper or free today because you reached a daily cap."
+                data-pageobject="journey-icon">
+            <span class="sr-only">Fares capped</span>
+        </button>
+
+</span>
+
+<span class="journey-to-from">
+            <span class="" data-pageobject="journey-from">Bond Street</span>
+            <span>to</span>
+            <span class="" data-pageobject="journey-to">East Putney</span>
+</span>
+        </p>
+        <p><span class="journey-time" data-pageobject="journey-time">15:46 - 16:18</span>
+</p>
+
+    </div>
+    <div class="col-xs-3 text-right text-nowrap">
+            <span class="journey-fare" data-pageobject="journey-fare">&#163;1.20</span>
+
+    </div>
+</div>
+                </a>
+
+
+
+
+
+
+    </div>
+</div>
+<div class="statements-list clearfix" data-pageobject="travelstatement-paymentsummary">
+    <div id="journey-date-heading-2" data-pageobject="statement-dateheading" tabindex="0" class="list-group-item journey-date-heading" data-toggle="collapse" data-target="#journey-2" aria-expanded="false" aria-controls="journey-2">
+        <span class="pull-right font-plus" aria-hidden="true"></span>
+        <span data-pageobject="statement-date" class="date-link">05/06/2016</span>
+            <span class="pull-right" data-pageobject="travelstatement-billingdetail-priceheading">&#163;4.00 </span>
+    </div>
+    <div class="list-group collapse" id="journey-2" aria-labelledby="journey-date-heading-2">
+                <a href="/Statements/ViewJourney?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg&amp;ti=bGbJ8QY_tbOMcB1ZqKe80pops_0-&amp;st=Payments&amp;sp=6%7C2016&amp;ji=d0mdTto_vlWUOx9zHKoeffIwHlU-&amp;travelDayKey=13305" class="list-group-item journey-tile" data-pageobject="statement-detaillink">
+                    <div class="row" data-pageobject="statement-paymentrow">
+    <div class="col-xs-9">
+        <p>
+
+
+<span class="journey-icons" data-pageobject="journey-icons">
+
+</span>
+
+<span class="journey-to-from">
+            <span class="" data-pageobject="journey-from">Putney</span>
+            <span>to</span>
+            <span class="" data-pageobject="journey-to">St Margarets London</span>
+</span>
+        </p>
+        <p><span class="journey-time" data-pageobject="journey-time">14:26 - 14:45</span>
+</p>
+
+    </div>
+    <div class="col-xs-3 text-right text-nowrap">
+            <span class="journey-fare" data-pageobject="journey-fare">&#163;2.00</span>
+
+    </div>
+</div>
+                </a>
+                <a href="/Statements/ViewJourney?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg&amp;ti=bGbJ8QY_tbOMcB1ZqKe80pops_0-&amp;st=Payments&amp;sp=6%7C2016&amp;ji=KLEvibB2Adn6Ze1tkDoM8p7IDF4-&amp;travelDayKey=13305" class="list-group-item journey-tile" data-pageobject="statement-detaillink">
+                    <div class="row" data-pageobject="statement-paymentrow">
+    <div class="col-xs-9">
+        <p>
+
+
+<span class="journey-icons" data-pageobject="journey-icons">
+
+</span>
+
+<span class="journey-to-from">
+            <span class="" data-pageobject="journey-from">St Margarets London</span>
+            <span>to</span>
+            <span class="" data-pageobject="journey-to">Putney</span>
+</span>
+        </p>
+        <p><span class="journey-time" data-pageobject="journey-time">17:58 - 18:25</span>
+</p>
+
+    </div>
+    <div class="col-xs-3 text-right text-nowrap">
+            <span class="journey-fare" data-pageobject="journey-fare">&#163;2.00</span>
+
+    </div>
+</div>
+                </a>
+
+
+
+
+
+
+    </div>
+</div>
+<div class="statements-list clearfix" data-pageobject="travelstatement-paymentsummary">
+    <div id="journey-date-heading-3" data-pageobject="statement-dateheading" tabindex="0" class="list-group-item journey-date-heading" data-toggle="collapse" data-target="#journey-3" aria-expanded="false" aria-controls="journey-3">
+        <span class="pull-right font-plus" aria-hidden="true"></span>
+        <span data-pageobject="statement-date" class="date-link">04/06/2016</span>
+            <span class="pull-right" data-pageobject="travelstatement-billingdetail-priceheading">&#163;4.40 </span>
+    </div>
+    <div class="list-group collapse" id="journey-3" aria-labelledby="journey-date-heading-3">
+                <a href="/Statements/ViewJourney?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg&amp;ti=bGbJ8QY_tbOMcB1ZqKe80pops_0-&amp;st=Payments&amp;sp=6%7C2016&amp;ji=ANAcaaG8UGxOhQmhEEkR0rjcAzk-&amp;travelDayKey=13304" class="list-group-item journey-tile" data-pageobject="statement-detaillink">
+                    <div class="row" data-pageobject="statement-paymentrow">
+    <div class="col-xs-9">
+        <p>
+
+
+<span class="journey-icons" data-pageobject="journey-icons">
+
+</span>
+
+<span class="journey-to-from">
+            <span class="" data-pageobject="journey-from">Putney</span>
+            <span>to</span>
+            <span class="" data-pageobject="journey-to">Waterloo NR</span>
+</span>
+        </p>
+        <p><span class="journey-time" data-pageobject="journey-time">10:22 - 10:51</span>
+</p>
+
+    </div>
+    <div class="col-xs-3 text-right text-nowrap">
+            <span class="journey-fare" data-pageobject="journey-fare">&#163;2.20</span>
+
+    </div>
+</div>
+                </a>
+                <a href="/Statements/ViewJourney?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg&amp;ti=bGbJ8QY_tbOMcB1ZqKe80pops_0-&amp;st=Payments&amp;sp=6%7C2016&amp;ji=E16EJf5ymH3lvXJe1pc3mz99IZk-&amp;travelDayKey=13304" class="list-group-item journey-tile" data-pageobject="statement-detaillink">
+                    <div class="row" data-pageobject="statement-paymentrow">
+    <div class="col-xs-9">
+        <p>
+
+
+<span class="journey-icons" data-pageobject="journey-icons">
+
+</span>
+
+<span class="journey-to-from">
+            <span class="" data-pageobject="journey-from">Waterloo NR</span>
+            <span>to</span>
+            <span class="" data-pageobject="journey-to">Putney</span>
+</span>
+        </p>
+        <p><span class="journey-time" data-pageobject="journey-time">14:50 - 15:16</span>
+</p>
+
+    </div>
+    <div class="col-xs-3 text-right text-nowrap">
+            <span class="journey-fare" data-pageobject="journey-fare">&#163;2.20</span>
+
+    </div>
+</div>
+                </a>
+
+
+
+
+
+
+    </div>
+</div>
+<div class="statements-list clearfix" data-pageobject="travelstatement-paymentsummary">
+    <div id="journey-date-heading-4" data-pageobject="statement-dateheading" tabindex="0" class="list-group-item journey-date-heading" data-toggle="collapse" data-target="#journey-4" aria-expanded="false" aria-controls="journey-4">
+        <span class="pull-right font-plus" aria-hidden="true"></span>
+            <img src="/Content/casc/images/blank.gif" data-pageobject="statement-icon"
+                 alt="fares capped " class="capped-icon-day  " aria-hidden="true">
+        <span data-pageobject="statement-date" class="date-link">03/06/2016</span>
+            <span class="pull-right" data-pageobject="travelstatement-billingdetail-priceheading">&#163;6.50 </span>
+    </div>
+    <div class="list-group collapse" id="journey-4" aria-labelledby="journey-date-heading-4">
+                <a href="/Statements/ViewJourney?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg&amp;ti=bGbJ8QY_tbOMcB1ZqKe80pops_0-&amp;st=Payments&amp;sp=6%7C2016&amp;ji=k1hCo06K7HHPx5ui8UNgmE_qsKM-&amp;travelDayKey=13303" class="list-group-item journey-tile" data-pageobject="statement-detaillink">
+                    <div class="row" data-pageobject="statement-paymentrow">
+    <div class="col-xs-9">
+        <p>
+
+
+<span class="journey-icons" data-pageobject="journey-icons">
+
+</span>
+
+<span class="journey-to-from">
+            <span class="" data-pageobject="journey-from">East Putney</span>
+            <span>to</span>
+            <span class="" data-pageobject="journey-to">Covent Garden</span>
+</span>
+        </p>
+        <p><span class="journey-time" data-pageobject="journey-time">09:58 - 10:29</span>
+</p>
+
+    </div>
+    <div class="col-xs-3 text-right text-nowrap">
+            <span class="journey-fare" data-pageobject="journey-fare">&#163;2.40</span>
+
+    </div>
+</div>
+                </a>
+                <a href="/Statements/ViewJourney?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg&amp;ti=bGbJ8QY_tbOMcB1ZqKe80pops_0-&amp;st=Payments&amp;sp=6%7C2016&amp;ji=ApY93Q0bkgDrZ531NZGB_VMZN04-&amp;travelDayKey=13303" class="list-group-item journey-tile" data-pageobject="statement-detaillink">
+                    <div class="row" data-pageobject="statement-paymentrow">
+    <div class="col-xs-9">
+        <p>
+
+
+<span class="journey-icons" data-pageobject="journey-icons">
+
+</span>
+
+<span class="journey-to-from">
+            <span class="" data-pageobject="journey-from">Covent Garden</span>
+            <span>to</span>
+            <span class="" data-pageobject="journey-to">Old Street</span>
+</span>
+        </p>
+        <p><span class="journey-time" data-pageobject="journey-time">10:42 - 11:03</span>
+</p>
+
+    </div>
+    <div class="col-xs-3 text-right text-nowrap">
+            <span class="journey-fare" data-pageobject="journey-fare">&#163;2.40</span>
+
+    </div>
+</div>
+                </a>
+                <a href="/Statements/ViewJourney?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg&amp;ti=bGbJ8QY_tbOMcB1ZqKe80pops_0-&amp;st=Payments&amp;sp=6%7C2016&amp;ji=faOrHTwPlPlqEJ_7mDTwUxeYrfo-&amp;travelDayKey=13303" class="list-group-item journey-tile" data-pageobject="statement-detaillink">
+                    <div class="row" data-pageobject="statement-paymentrow">
+    <div class="col-xs-9">
+        <p>
+
+
+<span class="journey-icons" data-pageobject="journey-icons">
+            <button class="btn btn-link capped-icon-day" type="button"
+                data-trigger="click focus hover"
+                data-container="body"
+                data-toggle="popover"
+                data-placement="right"
+                data-content="Some journeys were cheaper or free today because you reached a daily cap."
+                data-pageobject="journey-icon">
+            <span class="sr-only">Fares capped</span>
+        </button>
+
+</span>
+
+<span class="journey-to-from">
+            <span class="" data-pageobject="journey-from">Old Street</span>
+            <span>to</span>
+            <span class="" data-pageobject="journey-to">Leicester Square</span>
+</span>
+        </p>
+        <p><span class="journey-time" data-pageobject="journey-time">13:33 - 13:50</span>
+</p>
+
+    </div>
+    <div class="col-xs-3 text-right text-nowrap">
+            <span class="journey-fare" data-pageobject="journey-fare">&#163;1.70</span>
+
+    </div>
+</div>
+                </a>
+                <a href="/Statements/ViewJourney?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg&amp;ti=bGbJ8QY_tbOMcB1ZqKe80pops_0-&amp;st=Payments&amp;sp=6%7C2016&amp;ji=oXllDgFRmOunX2NywFWqJUPIV_c-&amp;travelDayKey=13303" class="list-group-item journey-tile" data-pageobject="statement-detaillink">
+                    <div class="row" data-pageobject="statement-paymentrow">
+    <div class="col-xs-9">
+        <p>
+
+
+<span class="journey-icons" data-pageobject="journey-icons">
+            <button class="btn btn-link capped-icon-day" type="button"
+                data-trigger="click focus hover"
+                data-container="body"
+                data-toggle="popover"
+                data-placement="right"
+                data-content="Some journeys were cheaper or free today because you reached a daily cap."
+                data-pageobject="journey-icon">
+            <span class="sr-only">Fares capped</span>
+        </button>
+
+</span>
+
+<span class="journey-to-from">
+            <span class="" data-pageobject="journey-from">Piccadilly Circus</span>
+            <span>to</span>
+            <span class="" data-pageobject="journey-to">East Putney</span>
+</span>
+        </p>
+        <p><span class="journey-time" data-pageobject="journey-time">16:09 - 16:37</span>
+</p>
+
+    </div>
+    <div class="col-xs-3 text-right text-nowrap">
+            <span class="journey-fare" data-pageobject="journey-fare">&#163;0.00</span>
+
+    </div>
+</div>
+                </a>
+
+
+
+
+
+
+    </div>
+</div>
+<div class="statements-list clearfix" data-pageobject="travelstatement-paymentsummary">
+    <div id="journey-date-heading-5" data-pageobject="statement-dateheading" tabindex="0" class="list-group-item journey-date-heading" data-toggle="collapse" data-target="#journey-5" aria-expanded="false" aria-controls="journey-5">
+        <span class="pull-right font-plus" aria-hidden="true"></span>
+        <span data-pageobject="statement-date" class="date-link">01/06/2016</span>
+            <span class="pull-right" data-pageobject="travelstatement-billingdetail-priceheading">&#163;1.50 </span>
+    </div>
+    <div class="list-group collapse" id="journey-5" aria-labelledby="journey-date-heading-5">
+                <a href="/Statements/ViewJourney?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg&amp;ti=bGbJ8QY_tbOMcB1ZqKe80pops_0-&amp;st=Payments&amp;sp=6%7C2016&amp;ji=Xfwa8~6Et2ow5eATe3VWszQ_SzU-&amp;travelDayKey=13301" class="list-group-item journey-tile" data-pageobject="statement-detaillink">
+                    <div class="row" data-pageobject="statement-paymentrow">
+    <div class="col-xs-9">
+        <p>
+
+
+<span class="journey-icons" data-pageobject="journey-icons">
+
+</span>
+
+<span class="journey-to-from">
+            <span class="" data-pageobject="journey-from">Bus Journey, Route 170</span>
+</span>
+        </p>
+        <p><span class="journey-time" data-pageobject="journey-time">13:17</span>
+</p>
+
+    </div>
+    <div class="col-xs-3 text-right text-nowrap">
+            <span class="journey-fare" data-pageobject="journey-fare">&#163;1.50</span>
+
+    </div>
+</div>
+                </a>
+
+
+
+
+
+
+    </div>
+</div>    </div>
+</div>
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Download statement</h2>
+                    <p id="travelstatement-download-subtitle">MasterCard - 1234 - This month (Payments)</p>
+                        <a href="/Statements/DownloadPdf?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg&amp;ti=bGbJ8QY_tbOMcB1ZqKe80pops_0-&amp;st=Payments&amp;sp=6%7C2016" class="btn btn-default" id="travelstatement-pdf-container">
+                            Download PDF format
+                        </a>
+
+                    <a href="/Statements/DownloadCsv?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg&amp;ti=bGbJ8QY_tbOMcB1ZqKe80pops_0-&amp;st=Payments&amp;sp=6%7C2016&amp;doc=Payments" class="btn btn-default" id="travelstatement-csv-container">
+                        Download CSV format
+                    </a>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="primary" id="footer" tabindex="-1">
+    <div class="container">
+        <h2 class="sr-only">Site footer</h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <h2 class="sr-only">About TfL</h2>
+                <ul class="footer-links">
+                    <li><a class="" href="https://tfl.gov.uk/help-and-contact/" data-jumpback="#recent-journeys a:last">Help &amp; contact</a></li>
+                    <li><a class="" href="https://tfl.gov.uk/corporate/careers/">Careers</a></li>
+                    <li><a class="" href="https://tfl.gov.uk/corporate/about-tfl/">About TfL</a></li>
+                    <li><a class="" href="https://tfl.gov.uk/corporate/safety-and-security/">Safety &amp; security</a></li>
+                    <li><a class="" href="https://tfl.gov.uk/corporate/transparency/">Transparency</a></li>
+                    <li><a class="" href="https://tfl.gov.uk/corporate/publications-and-reports/">Publications &amp; reports</a></li>
+                    <li><a class="" href="https://tfl.gov.uk/corporate/tfl-shop/">Gift Shop</a></li>
+                    <li><a class="" href="https://tfl.gov.uk/travel-information/social-media-and-email-updates/">Social media &amp; email updates</a></li>
+                    <li><a class="languages-footer" href="https://tfl.gov.uk/travel-information/other-languages/">Other languages</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-8">
+                <h2>Information for...</h2>
+                <ul class="list-group row">
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/media/">Media</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/business-and-commercial/">Business &amp; commercial</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/boroughs/">Boroughs</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/schools-and-young-people/">Schools &amp; young people</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/deliveries-in-london/">Deliveries in London</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/urban-planning-and-construction/">Urban planning &amp; construction</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/taxis-and-private-hire/">Taxi &amp; private hire licensing</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/suppliers-and-contractors/">Suppliers &amp; contractors</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/bus-operators/">Bus operators</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/open-data-users/">Open data users</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/coach-drivers/">Coach drivers</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/investors/">Investors</a></li>
+                </ul>
+                <div class="footer-MOL-logo">
+                    <ul class="links-list" id="gla-list" data-selected-item-id="Mayer Of London Logo" data-dropdown-target="footer-MOL-logo" data-dropdown-option="gla-dropdown">
+                        <li class="MOL-logo-dropdown" data-item-id="Mayor Of London Logo"><img src="/Content/casc/images/blank.gif" class="image-logos-mol-white-footer hidden-xs" alt="Mayor of London"></li>
+                        <li data-item-id="" class="greater-london-authority-li"><img src="https://contactless.tfl.gov.uk/Content/casc/images/GLA_Logo.png;wa438793f0d6420311" alt="Greater London Authority" /></li>
+                        <li data-item-id="MOL1"><a href="http://www.london.gov.uk/"><span class="font-external pull-right" aria-hidden="true"></span>Mayor of London</a></li>
+                        <li data-item-id="LA2"><a href="http://www.london.gov.uk/mayor-assembly/london-assembly"><span class="font-external pull-right" aria-hidden="true"></span>London Assembly</a></li>
+                        <li data-item-id="LP3"><a href="http://www.londonandpartners.com/"><span class="font-external pull-right" aria-hidden="true"></span>London and Partners</a></li>
+                        <li data-item-id="MPS4"><a href="http://content.met.police.uk/"><span class="font-external pull-right" aria-hidden="true"></span>Metropolitan Police Service</a></li>
+                        <li data-item-id="LFEPA5"><a href="http://www.london-fire.gov.uk/index.asp"><span class="font-external pull-right" aria-hidden="true"></span>London Fire and Emergency Planning Authority</a></li>
+                        <li data-item-id="MOPC6"><a href="https://www.london.gov.uk/what-we-do/mayors-office-policing-and-crime-mopac"><span class="font-external pull-right" aria-hidden="true"></span>The Mayors Office of Policing and Crime</a></li>
+                        <li data-item-id="LLDC" class="lldc"><a href="http://www.londonlegacy.co.uk/"><span class="font-external pull-right" aria-hidden="true"></span>London Legacy Development Corporation</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer class="secondary">
+    <div class="container">
+        <h2 class="sr-only">Site structure and legal information</h2>
+        <div class="row">
+            <div class="col-xs-8">
+                <ul class="list-inline">
+                        <li><a href="https://tfl.gov.uk/corporate/terms-and-conditions/">Terms &amp; conditions</a></li>
+                        <li><a href="https://tfl.gov.uk/corporate/privacy-and-cookies/">Privacy &amp; cookies</a></li>
+                        <li><a href="https://tfl.gov.uk/corporate/website-accessibility/">Website accessibility</a></li>
+                    </ul>
+        </div>
+            <div class="col-xs-4 text-right">Copyright TfL</div>
+    </div>
+</div>
+</footer>
+
+
+
+
+    <script src="/bundles/allScripts?v=PfYdWHsLCY8kRKR7Ev8GanI8SFegECKw9rX1dazpDEw1"></script>
+
+
+
+
+
+<!-- Begin Casc SiteCatalyst-->
+<script type="text/javascript">
+
+    tfl.stats.account = 'tfl-global';
+</script>
+<script src="/Scripts/vendor/SiteCatalyst.js?Gxxs" type="text/javascript"></script>
+<script type="text/javascript">
+         <!--
+    tfl.stats.code = s.t();
+    if (tfl.stats.code) document.write(tfl.stats.code);
+    if (navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-');
+//-->
+ </script>
+<noscript>
+    <img src="https://tfl.d3.sc.omtrdc.net/b/ss/tfl-prod,tfl-global/1/H.26--NS/0?[AQB]&cdp=3&[AQE]" height="1" width="1" border="0" alt="" />
+</noscript>
+    <!-- End Casc SiteCatalyst-->
+
+
+    <!--3bng5il5rgzcpwl7943gtfc8fme3zx84-->
+    <script type="text/javascript">
+        tfl.shared.init();
+        $(document).ready(tfl.csc.util.init());
+    </script>
+</body>
+</html>
+
+<script id="f5_cspm">(function(){var f5_cspm={f5_p:'KNHCKFGBNFDHHAENCOCLHIEJNBEBFGOAEBPJMNFMEOEBALNINMFNIJOHKFCAGMBIAAICENOEIGPIIEFBAADEGFIDJMHDIGECFELCBAOBOHEOCBAPCKPGEONNDLLJINEG',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,32,(latency>>8));str=f5_cspm.set_byte(str,33,(latency&0xff));str=f5_cspm.set_byte(str,27,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avraaaaaaaaaaaaaaaa='+encodeURIComponent(cookie_val)+';path=/';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
+{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;';setTimeout(f5_cspm.wait_perf_data,100);}}}}
+f5_cspm.go();}());</script>

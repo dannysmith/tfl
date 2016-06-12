@@ -1,0 +1,556 @@
+
+
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]> <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]> <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en-gb" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48" href="/Content/tflGlobal/images/favicon.ico">
+    <link rel="icon" type="image/png" href="https://contactless.tfl.gov.uk/Content/tflGlobal/images/icons/favicon-32x32.png;wa2f2ff12cc06013a2" sizes="32x32">
+    <link rel="mask-icon" href="/Content/tflGlobal/images/icons/mask-icon.svg" color="#113b92" />
+    <link rel="apple-touch-icon" href="/Content/tflGlobal/images/icons/apple-touch-icon-v1.png">
+    <meta name="msapplication-TileImage" content="/Content/tflGlobal/images/icons/windows/large.png">
+    <meta name="msapplication-TileColor" content="#113b92">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="/bundles/tflSharedBootstrapCss?v=Wx53Mh8DqO_SR8NM1D6IXwGW64xWWVP8Dwq9C0KBAP01" rel="stylesheet"/>
+
+    <link href="/bundles/tflSharedThemeCss?v=afEEHs9GGX6k8UjRJDkKGPL1OrklpATxhxaQ9wPmZ3A1" rel="stylesheet"/>
+
+    <link href="/bundles/cascStyles?v=EnuMILagKW7rhwLDDN3sMtDCPqnz3zPTr_6V3z6T75I1" rel="stylesheet"/>
+
+    <script src="/bundles/toploadingScripts?v=DW0kou8JBrRo-30HHmLztr81Ae9KaBXxG7Ouvyt-zN81"></script>
+
+
+
+
+
+
+    <!--[if lt IE 9]>
+        <script src="https://contactless.tfl.gov.uk/Scripts/vendor/html5shiv-3.7.2.min.js;wa3b309e9b22d9fad3"></script>
+        <script src="https://contactless.tfl.gov.uk/Scripts/vendor/respond-1.4.2.min.js;waa9239317aa1d5d2f"></script>
+    <![endif]-->
+
+    <title>My Contactless cards - My Account - Transport for London</title>
+
+
+</head>
+<body data-controller="myCards" data-action="index">
+    <a href="#mainnav" class="sr-only sr-only-focusable">Skip to site navigation</a>
+    <a href="#pageNavigation" class="sr-only sr-only-focusable">Skip to page navigation</a>
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to content</a>
+    <a href="#footer" class="sr-only sr-only-focusable">Skip to footer</a>
+        <img alt="KeepAlive" style="display: none;" src="https://account.tfl.gov.uk/Home/KeepAlive" />
+
+    <nav class="navbar navbar-default" id="mainnav" tabindex="-1">
+    <div class="container" id="cookie-policy-notice">
+        <div class="row">
+            <div id="cookie-policy-text" class="col-xs-10">
+                <p>The TfL website uses cookies. By continuing to access the site you are agreeing to their use. <a class="link2" href="https://tfl.gov.uk/corporate/privacy-and-cookies/cookies">Learn more about cookies</a></p>
+            </div>
+            <div class="col-xs-2 text-right" id="cookie-policy-button">
+                <a href="javascript:void(0)"><span class="font-close" aria-hidden="true"><span class="sr-only">Close</span></span></a>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="mayorLogoRow">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-right">
+                        <img alt="" src="/Content/casc/images/blank.gif" class="image-logos-mol-white-small">
+                        <span class="sr-only">Mayor of London</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="navbar-container">
+                <div class="navbar-header"><button id="nav-toggle-search" type="button" class="toggle-search collapsed visible-xs-block visible-sm-block" data-toggle="collapse" data-target="#searchform" aria-expanded="false" aria-controls="searchform" data-alt="Open Search"><span class="font-search"></span>&nbsp;<span class="font-small-down-arrow pull-right"></span><span class="sr-only">toggle search</span></button> <button id="nav-toggle-menu" type="button" class="navbar-toggle collapsed hidden-sm" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" data-alt="Open Menu"><span class="sr-only">toggle</span><span>Menu&nbsp;</span><span class="font-small-down-arrow pull-right"></span></button> <a class="navbar-brand" href="https://tfl.gov.uk/"><img src="/Content/casc/images/blank.gif" class="image-logos-tfl-white-large hidden-xs" alt=""><img src="/Content/casc/images/blank.gif" class="image-logos-tfl-white-mobile visible-xs-inline-block" alt=""> <span class="sr-only">Transport for London</span></a></div>
+                <div id="navbar" class="navbar-collapse collapse navbar-left">
+                    <ul class="nav navbar-nav clearfix">
+                        <li class="active"><a href="https://tfl.gov.uk/plan-a-journey/">Plan a journey</a></li>
+                        <li><a href="https://tfl.gov.uk/status-updates/">Status updates</a></li>
+                        <li><a href="https://tfl.gov.uk/maps_/maps">Maps</a></li>
+                        <li><a href="https://tfl.gov.uk/fares-and-payments/">Fares &amp; payments</a></li>
+                        <li><button id="nav-toggle-more" type="button" class="collapsed btn btn-link" data-toggle="collapse" data-target="#more-menu" aria-expanded="false" aria-controls="more-menu"><span class="sr-only">Toggle page navigation</span>More...&nbsp;<span class="font-small-down-arrow" aria-hidden="true"></span></button></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="searchform" role="search" class="navbar-collapse collapse navbar-right">
+                <form class="navbar-form" action="https://tfl.gov.uk/search/" method="GET">
+                    <div class="form-group">
+                        <div class="input-group"><label for="q" class="sr-only">Search the site</label> <input id="q" name="q" autocomplete="off" type="text" class="form-control" placeholder="Search"> <span class="input-group-btn"><button id="search-button" class="btn btn-link" type="submit"><span class="font-search"></span><span class="sr-only">Search</span></button></span></div>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    <div class="row collapse" id="more-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                <h2>Travel information</h2>
+                <ul class="clearfix">
+                    <li><a href="https://tfl.gov.uk/travel-information/visiting-london/" data-jumpback=".more a:first:visible">Visiting London</a></li>
+                    <li><a href="https://tfl.gov.uk/transport-accessibility/">Transport accessibility</a></li>
+                    <li><a href="https://tfl.gov.uk/travel-information/safety/">Safety</a></li>
+                    <li><a href="https://tfl.gov.uk/travel-information/improvements-and-projects/">Improvements &amp; projects</a></li>
+                    <li><a href="https://tfl.gov.uk/travel-information/timetables/">Timetables</a></li>
+                    <li><a href="https://tfl.gov.uk/travel-information/stations-stops-and-piers/">Stations, stops &amp; piers</a></li>
+                        <li><a href="https://tfl.gov.uk/help-and-contact/">Help &amp; contact</a></li>
+                </ul>
+            </div>
+                <div class="col-sm-6">
+                <h2>Ways to get around</h2>
+                    <ul class="clearfix list-group row">
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/buses/">Buses</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/driving/">Driving</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/tube/">Tube</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/cycling/">Cycling</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/dlr/">DLR</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/london-overground/">London Overground</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/emirates-air-line/">Emirates Air Line</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/taxis-and-minicabs/">Taxis &amp; minicabs</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/trams/">Trams</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/river/">River</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/coaches/">Coaches</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/dial-a-ride/">Dial-a-Ride</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/tfl-rail/">TfL Rail</a></li>
+                        <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/modes/walking/">Walking</a></li>
+                </ul>
+            </div>
+                <div class="col-sm-3">
+                <h2>Quick links</h2>
+                <ul class="clearfix">
+                    <li><a href="https://tfl.gov.uk/modes/driving/congestion-charge">Congestion Charge</a></li>
+                    <li><a href="https://tfl.gov.uk/modes/cycling/santander-cycles">Santander Cycles</a></li>
+                    <li><a href="https://tfl.gov.uk/modes/driving/low-emission-zone">Low Emission Zone</a></li>
+                        <li><a href="https://tfl.gov.uk/fares-and-payments/replacements-and-refunds">Refunds &amp; replacements</a></li>
+                        <li><a href="https://tfl.gov.uk/fares-and-payments/oyster">Oyster</a></li>
+                        <li><a href="https://tfl.gov.uk/modes/driving/car-clubs">Car clubs</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</nav>
+
+
+    <div class="container" id="main-content">
+        <header>
+            <div class="row">
+                <div class="col-sm-7 hidden-xs">
+                    <ol class="breadcrumb" id="breadcrumb">
+
+
+<li class="home ">
+    <a href="https://tfl.gov.uk/" title="Transport for London - Home">
+        <span class="font-home" aria-hidden="true"></span>
+        <span class="sr-only">Home</span>
+    </a>
+</li>
+
+
+        <li><a href="/Dashboard">My Account</a></li>
+        <li class="last-child"><a href="/MyCards">Contactless</a></li>
+
+
+                    </ol>
+                </div>
+                <div class="col-sm-5 col-xs-12">
+                    <div class="text-right my-account-status">
+
+                                     <form method="POST" action="/HomePage/SignOut">
+                <input name="__RequestVerificationToken" type="hidden" value="QHxq9vlXBQ3ZVYPBy41z3IPNZIsMtrBLGsYAQCSv6MCNAXpKkjFYha4ziMOWX0vma63kVHGK2UaDORja4iFvRuIXuYcWSkgeZDzRY67V1347" />
+                    <span id="user-logged-in" class="font-user" aria-hidden="true"></span> Welcome back, James (<button class="btn btn-link" type="submit">Sign out</button>)
+            </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="row" id="title-row">
+                        <div class="col-xs-10">
+
+    <h1 id="headingsimplelayout-pageheading">My Contactless cards</h1>
+
+                        </div>
+                        <div class="col-xs-2 text-right">
+                                <img alt="" src="/Content/casc/images/blank.gif" class="image-logos-casc-mobile visible-xs-inline-block">
+                                <img alt="" src="/Content/casc/images/blank.gif" class=" image-logos-casc-large hidden-xs">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <div class="row">
+            <div class="col-sm-4 col-sm-push-8" id="page-navigation">
+
+
+<script>
+    tfl.csc.options.set('selectedNavItem', "navMyContactlessCards");
+</script>
+
+
+<div class="row visible-xs-block">
+    <div class="navbar-header col-xs-12" id="pageNavigationControl">
+        <button type="button" class="navbar-toggle collapsed btn btn-block" data-toggle="collapse" data-target="#pageNavigation" aria-expanded="false" aria-controls="pageNavigation">
+            <span class="sr-only">Toggle </span><span class="font-plus pull-right" aria-hidden="true"></span><span class="font-hamburger" aria-hidden="true"></span> Navigation
+        </button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <nav id="pageNavigation" class="panel list-group navbar-collapse collapse" tabindex="-1">
+            <a href="#page-content" class="sr-only sr-only-focusable">Skip page navigation</a>
+            <a href="/Dashboard" class=" list-group-item panel-title"><span class="font-right-arrow pull-right visible-xs-block" aria-hidden="true"></span><h4>My Account</h4></a>
+            <button id="navOysterCards" type="button" class="list-group-item selected-parent" data-toggle="collapse" data-target="#Oyster" aria-expanded="false" aria-controls="Oyster"><span class="font-plus pull-right" aria-hidden="true"></span>Oyster cards</button>
+
+            <div class="collapse list-group-submenu list-group-submenu-1" id="Oyster">
+                <a href="https://oyster.tfl.gov.uk/oyster/showCards.do?_o=KTaO6YfdBpIdcN8DLNDKgw%3D%3D" id="navMyOyster" class="list-group-item" data-parent="#Oyster"><span class="font-right-arrow pull-right" aria-hidden="true"></span>My Oyster cards</a>
+
+                <a href="https://oyster.tfl.gov.uk/oyster/userProfile.do?_o=KTaO6YfdBpIdcN8DLNDKgw%3D%3D" id="navDetails" class="list-group-item" data-parent="#Oyster"><span class="font-right-arrow pull-right" aria-hidden="true"></span>View/change my details</a>
+                <a href="https://oyster.tfl.gov.uk/oyster/changePin.do?_o=KTaO6YfdBpIdcN8DLNDKgw%3D%3D" id="navPin" class="list-group-item" data-parent="#Oyster"><span class="font-right-arrow pull-right" aria-hidden="true"></span>View/change PIN</a>
+                <a href="https://oyster.tfl.gov.uk/oyster/changePassword.do?_o=KTaO6YfdBpIdcN8DLNDKgw%3D%3D" id="navPassword" class="list-group-item" data-parent="#Oyster"><span class="font-right-arrow pull-right" aria-hidden="true"></span>Change my password</a>
+                <a href="https://oyster.tfl.gov.uk/oyster/orderHistory.do?_o=KTaO6YfdBpIdcN8DLNDKgw%3D%3D" class="list-group-item" id="navOrders" data-parent="#Oyster"><span class="font-right-arrow pull-right" aria-hidden="true"></span>Order history</a>
+
+                <a href="https://oyster.tfl.gov.uk/oyster/credit.do?_o=KTaO6YfdBpIdcN8DLNDKgw%3D%3D" id="navCredits" class="list-group-item" data-parent="#Oyster"><span class="font-right-arrow pull-right" aria-hidden="true"></span>Web credits</a>
+                <a href="https://oyster.tfl.gov.uk/oyster/refundHistory.do?_o=KTaO6YfdBpIdcN8DLNDKgw%3D%3D" class="list-group-item" id="navRefundHistory" data-parent="#Oyster"><span class="font-right-arrow pull-right" aria-hidden="true"></span>Refund history</a>
+                <a href="https://oyster.tfl.gov.uk/oyster/sdr.do?_o=KTaO6YfdBpIdcN8DLNDKgw%3D%3D" id="navSDR" class="list-group-item" data-parent="#Oyster"><span class="font-right-arrow pull-right" aria-hidden="true"></span>Service delay refunds</a>
+                <a href="https://oyster.tfl.gov.uk/oyster/cstp.do?_o=KTaO6YfdBpIdcN8DLNDKgw%3D%3D" id="navRefund" class="list-group-item" data-parent="#Oyster"><span class="font-right-arrow pull-right" aria-hidden="true"></span>Apply for a product refund</a>
+
+                <a href="https://tfl.gov.uk/help-and-contact/" class="list-group-item" data-parent="#Oyster"><span class="font-external pull-right" aria-hidden="true"></span>Oyster help</a>
+            </div>
+
+            <button id="navContactless" type="button" class="list-group-item selected-parent" data-toggle="collapse" data-target="#Contactless" aria-expanded="false" aria-controls="Contactless"><span class="font-plus pull-right" aria-hidden="true"></span>Contactless</button>
+            <div class="collapse list-group-submenu list-group-submenu-1" id="Contactless">
+                <a href="/MyCards" id="navMyContactlessCards" class="list-group-item" data-parent="#Contactless"><span class="font-right-arrow pull-right" aria-hidden="true"></span>My Contactless cards</a>
+
+                    <button type="button" class="list-group-item" data-toggle="collapse" data-target="#CurrentCard" aria-expanded="false" aria-controls="CurrentCard"><span class="font-plus pull-right" aria-hidden="true"></span><img src="/Content/casc/images/blank.gif" class="image-cards-mastercard-medium" alt="MasterCard" aria-hidden="true">ending in 1234
+                    </button>
+    <div class="collapse list-group-submenu list-group-submenu-1" id="CurrentCard" data-card-id="1wRXbW9Y4gzNpG8MhTorM2wRY1jg">
+        <a id="navCardOverview" href="/Card/View?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg" class="list-group-item"><span class="font-right-arrow pull-right"></span>Card overview</a>
+            <a id="navCardIncomplete" href="/Card/Refunds?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg" class="list-group-item"><span class="font-right-arrow pull-right"></span>Apply for incomplete journey refund</a>
+            <a id="navCardTravelStatement" href="/Statements/TravelStatement?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg" class="list-group-item"><span class="font-right-arrow pull-right"></span>Journey & payment history</a>
+            <a id="navCardRefundHistory" href="/Card/RefundHistory?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg" class="list-group-item"><span class="font-right-arrow pull-right"></span>View refund history</a>
+        <a id="navCardContact" href="/ContactUs/RegisteredCard?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg" class="list-group-item"><span class="font-right-arrow pull-right"></span>Contact us about this card</a>
+        <a id="navCardSDR" href="/ServiceDelayRefunds/Apply?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg" class="list-group-item"><span class="font-right-arrow pull-right"></span>Service delay refunds</a>
+        <a id="navCardRemove" href="/Card/Delete?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg" class="list-group-item"><span class="font-right-arrow pull-right"></span>Remove this card</a>
+    </div>
+                <a href="/MyCards/Hidden" id="navMyHiddenCards" class="list-group-item" data-parent="#Contactless"><span class="font-right-arrow pull-right" aria-hidden="true"></span>My hidden cards</a>
+
+            </div>
+            <a href="https://account.tfl.gov.uk/Profile" class="list-group-item"><span class="font-right-arrow pull-right" aria-hidden="true"></span>Personal details</a>
+        </nav>
+
+            </div>
+        </div>
+
+
+            </div>
+            <div class="col-sm-8 col-sm-pull-4" id="page-content">
+
+
+
+<div class="row">
+    <div class="col-xs-12">
+        <div id="mycards-contactlesscards-container" class="noJShidden">
+            <div class="text-center"><span class="sr-only">Loading</span><img src="/Content/casc/icons/ajax-loader.gif" id="mycards-contactlesscards-loading" alt="" aria-hidden="true"></div>
+        </div>
+        <noscript>
+            <div id="mycards-contactlesscards-container-no-js">
+                        <div id="dashboard-contactlesscards-showingxofy"></div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="row title-with-search">
+                            </div>
+                            <div id="contactless-card-list" aria-multiselectable="true">
+                                <div id="card-list" class="version3">
+<a href="/Card/View?pi=1wRXbW9Y4gzNpG8MhTorM2wRY1jg" data-pageobject="mycards-card-cardlink">
+    <div class="indiv-card2 panel card-overview">
+        <div class="panel-heading" tabindex="0">
+            <div class="row">
+                <div class="col-xs-12 col-sm-7">
+                    <img src="/Content/casc/images/blank.gif" alt="" class="image-cards-mastercard-medium pull-left hidden-xs hidden-sm" aria-hidden="true" data-pageobject="view-card-logo">
+                    <h3 class="current-nickname">
+                        <span class="sr-only">MasterCard card number:</span>
+                        <span class="view-card-nickname">ending in 1234</span>
+                    </h3>
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                    <h3 class="card-status text-success">
+                        <span class="font-tick" aria-hidden="true"></span> Ready for travel
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 card-summary">
+                    <div class="row">
+                        <div class="col-md-5 col-lg-4 balance-details">
+                            <p>&nbsp;</p>
+                        </div>
+                        <div class="col-md-7 col-lg-8 ticket-details">
+                            <p>
+                                <span class="font-ticket" aria-hidden="true">Card Expires:</span>
+                                <span class="expires" data-pageobject="view-card-cardexpiry">
+                                    01/2020
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+<a href="/Card/View?pi=J16kuCuoJhMzHf8Bc0udT7iWJ0BU" data-pageobject="mycards-card-cardlink">
+    <div class="indiv-card2 panel card-overview">
+        <div class="panel-heading" tabindex="0">
+            <div class="row">
+                <div class="col-xs-12 col-sm-7">
+                    <img src="/Content/casc/images/blank.gif" alt="" class="image-cards-visa-medium pull-left hidden-xs hidden-sm" aria-hidden="true" data-pageobject="view-card-logo">
+                    <h3 class="current-nickname">
+                        <span class="sr-only">Visa card number:</span>
+                        <span class="view-card-nickname">ending in 5678</span>
+                    </h3>
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                    <h3 class="card-status text-success">
+                        <span class="font-tick" aria-hidden="true"></span> Ready for travel
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 card-summary">
+                    <div class="row">
+                        <div class="col-md-5 col-lg-4 balance-details">
+                            <p>&nbsp;</p>
+                        </div>
+                        <div class="col-md-7 col-lg-8 ticket-details">
+                            <p>
+                                <span class="font-ticket" aria-hidden="true">Card Expires:</span>
+                                <span class="expires" data-pageobject="view-card-cardexpiry">
+                                    12/2025
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </noscript>
+    </div>
+</div>
+<ul class="list-group row">
+    <li class="col-md-12">
+        <a id="view-card-viewHiddenCards" href="/MyCards/Hidden" class="list-group-item">
+            <span class="font-right-arrow pull-right"></span>
+            My hidden cards
+        </a>
+    </li>
+</ul>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="cta-block">
+                <a href="/MyCards/AddPaymentCard" id="mycards-contactless-addcardlink">
+                    <div class="text-link">
+                        <div class="row">
+                            <div class="col-xs-2 col-md-3 text-center">
+                                <div class="font-plus" aria-hidden="true"></div>
+                            </div>
+                            <div class="col-xs-10 col-md-9">
+                                <h3>Add a contactless payment card</h3>
+                                <p>See how you've been charged and where you've been.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="cta-block">
+                <a href="https://tfl.gov.uk/fares-and-payments/contactless" id="mycards-contactless-moreinfo" class="external">
+                    <div class="text-link">
+                        <div class="row">
+                            <div class="col-xs-2 col-md-3 text-center">
+                                <div class="font-information" aria-hidden="true"></div>
+                            </div>
+                            <div class="col-xs-10 col-md-9">
+                                <h3>More about Contactless</h3>
+                                <p>You can find out even more about Contactless cards here</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+    <div class="col-md-12">
+        <h2>Useful links</h2>
+        <ul class="list-group row">
+            <li class="col-md-6">
+                <a href="https://tfl.gov.uk/fares-and-payments/contactless/what-are-contactless-payment-cards" class="list-group-item"><span class="font-external pull-right" aria-hidden="true"></span>What are contactless payment cards?</a>
+            </li>
+            <li class="col-md-6">
+                <a href="https://tfl.gov.uk/fares-and-payments/contactless/other-methods-of-contactless-payment" class="list-group-item"><span class="font-external pull-right" aria-hidden="true"></span>Other methods of contactless payment</a>
+            </li>
+            <li class="col-md-6">
+                <a href="https://tfl.gov.uk/fares-and-payments/contactless/is-contactless-for-me" class="list-group-item"><span class="font-external pull-right" aria-hidden="true"></span>Is contactless for me?</a>
+            </li>
+            <li class="col-md-6">
+                <a href="https://tfl.gov.uk/fares-and-payments/contactless/how-to-use-it" class="list-group-item"><span class="font-external pull-right" aria-hidden="true"></span>Using contactless payment cards</a>
+            </li>
+            <li class="col-md-6">
+                <a href="https://tfl.gov.uk/fares-and-payments/contactless/card-clash" class="list-group-item"><span class="font-external pull-right" aria-hidden="true"></span>Watch out for card clash</a>
+            </li>
+            <li class="col-md-6">
+                <a href="https://tfl.gov.uk/fares-and-payments/contactless/how-fares-are-charged" class="list-group-item"><span class="font-external pull-right" aria-hidden="true"></span>How fares are charged</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<form id="getCardDataForm" class="hidden noJShidden"><input name="__RequestVerificationToken" type="hidden" value="DeNhNXV91c74K0j79QZTtud1ny6cbG7hNsswdP8s4T_kuU4tYFuyxkS1MH-Ews3bnnUDOpxJO-MyrixkuaLgQm6cZ9pM52hSlGmgWiyBdYo1" /><input type="submit" /></form>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="primary" id="footer" tabindex="-1">
+    <div class="container">
+        <h2 class="sr-only">Site footer</h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <h2 class="sr-only">About TfL</h2>
+                <ul class="footer-links">
+                    <li><a class="" href="https://tfl.gov.uk/help-and-contact/" data-jumpback="#recent-journeys a:last">Help &amp; contact</a></li>
+                    <li><a class="" href="https://tfl.gov.uk/corporate/careers/">Careers</a></li>
+                    <li><a class="" href="https://tfl.gov.uk/corporate/about-tfl/">About TfL</a></li>
+                    <li><a class="" href="https://tfl.gov.uk/corporate/safety-and-security/">Safety &amp; security</a></li>
+                    <li><a class="" href="https://tfl.gov.uk/corporate/transparency/">Transparency</a></li>
+                    <li><a class="" href="https://tfl.gov.uk/corporate/publications-and-reports/">Publications &amp; reports</a></li>
+                    <li><a class="" href="https://tfl.gov.uk/corporate/tfl-shop/">Gift Shop</a></li>
+                    <li><a class="" href="https://tfl.gov.uk/travel-information/social-media-and-email-updates/">Social media &amp; email updates</a></li>
+                    <li><a class="languages-footer" href="https://tfl.gov.uk/travel-information/other-languages/">Other languages</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-8">
+                <h2>Information for...</h2>
+                <ul class="list-group row">
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/media/">Media</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/business-and-commercial/">Business &amp; commercial</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/boroughs/">Boroughs</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/schools-and-young-people/">Schools &amp; young people</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/deliveries-in-london/">Deliveries in London</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/urban-planning-and-construction/">Urban planning &amp; construction</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/taxis-and-private-hire/">Taxi &amp; private hire licensing</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/suppliers-and-contractors/">Suppliers &amp; contractors</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/bus-operators/">Bus operators</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/open-data-users/">Open data users</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/coach-drivers/">Coach drivers</a></li>
+                    <li class="list-group-item col-sm-6"><a href="https://tfl.gov.uk/info-for/investors/">Investors</a></li>
+                </ul>
+                <div class="footer-MOL-logo">
+                    <ul class="links-list" id="gla-list" data-selected-item-id="Mayer Of London Logo" data-dropdown-target="footer-MOL-logo" data-dropdown-option="gla-dropdown">
+                        <li class="MOL-logo-dropdown" data-item-id="Mayor Of London Logo"><img src="/Content/casc/images/blank.gif" class="image-logos-mol-white-footer hidden-xs" alt="Mayor of London"></li>
+                        <li data-item-id="" class="greater-london-authority-li"><img src="https://contactless.tfl.gov.uk/Content/casc/images/GLA_Logo.png;wa438793f0d6420311" alt="Greater London Authority" /></li>
+                        <li data-item-id="MOL1"><a href="http://www.london.gov.uk/"><span class="font-external pull-right" aria-hidden="true"></span>Mayor of London</a></li>
+                        <li data-item-id="LA2"><a href="http://www.london.gov.uk/mayor-assembly/london-assembly"><span class="font-external pull-right" aria-hidden="true"></span>London Assembly</a></li>
+                        <li data-item-id="LP3"><a href="http://www.londonandpartners.com/"><span class="font-external pull-right" aria-hidden="true"></span>London and Partners</a></li>
+                        <li data-item-id="MPS4"><a href="http://content.met.police.uk/"><span class="font-external pull-right" aria-hidden="true"></span>Metropolitan Police Service</a></li>
+                        <li data-item-id="LFEPA5"><a href="http://www.london-fire.gov.uk/index.asp"><span class="font-external pull-right" aria-hidden="true"></span>London Fire and Emergency Planning Authority</a></li>
+                        <li data-item-id="MOPC6"><a href="https://www.london.gov.uk/what-we-do/mayors-office-policing-and-crime-mopac"><span class="font-external pull-right" aria-hidden="true"></span>The Mayors Office of Policing and Crime</a></li>
+                        <li data-item-id="LLDC" class="lldc"><a href="http://www.londonlegacy.co.uk/"><span class="font-external pull-right" aria-hidden="true"></span>London Legacy Development Corporation</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer class="secondary">
+    <div class="container">
+        <h2 class="sr-only">Site structure and legal information</h2>
+        <div class="row">
+            <div class="col-xs-8">
+                <ul class="list-inline">
+                        <li><a href="https://tfl.gov.uk/corporate/terms-and-conditions/">Terms &amp; conditions</a></li>
+                        <li><a href="https://tfl.gov.uk/corporate/privacy-and-cookies/">Privacy &amp; cookies</a></li>
+                        <li><a href="https://tfl.gov.uk/corporate/website-accessibility/">Website accessibility</a></li>
+                    </ul>
+        </div>
+            <div class="col-xs-4 text-right">Copyright TfL</div>
+    </div>
+</div>
+</footer>
+
+
+
+
+    <script src="/bundles/allScripts?v=PfYdWHsLCY8kRKR7Ev8GanI8SFegECKw9rX1dazpDEw1"></script>
+
+
+
+
+
+<!-- Begin Casc SiteCatalyst-->
+<script type="text/javascript">
+
+    tfl.stats.account = 'tfl-global';
+</script>
+<script src="/Scripts/vendor/SiteCatalyst.js?Gxxs" type="text/javascript"></script>
+<script type="text/javascript">
+         <!--
+    tfl.stats.code = s.t();
+    if (tfl.stats.code) document.write(tfl.stats.code);
+    if (navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-');
+//-->
+ </script>
+<noscript>
+    <img src="https://tfl.d3.sc.omtrdc.net/b/ss/tfl-prod,tfl-global/1/H.26--NS/0?[AQB]&cdp=3&[AQE]" height="1" width="1" border="0" alt="" />
+</noscript>
+    <!-- End Casc SiteCatalyst-->
+
+
+    <!--o3p6tas1cqjw399riicsijx7vgr4ibpp-->
+    <script type="text/javascript">
+        tfl.shared.init();
+        $(document).ready(tfl.csc.util.init());
+    </script>
+</body>
+</html>
+
+<script id="f5_cspm">(function(){var f5_cspm={f5_p:'KFJABGNJENKOJAJKEFFJHMOEIDOPLFGKNBINIBBFINNBPKMHLDADPAJIODJAJGGOAAKADBEADDJEDDPDAAHCJEDMKMIBKPLJDHBPICEEPKIPEFGGCMNHMGAKJKCDBJLE',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,32,(latency>>8));str=f5_cspm.set_byte(str,33,(latency&0xff));str=f5_cspm.set_byte(str,27,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avraaaaaaaaaaaaaaaa='+encodeURIComponent(cookie_val)+';path=/';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
+{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;';setTimeout(f5_cspm.wait_perf_data,100);}}}}
+f5_cspm.go();}());</script>
