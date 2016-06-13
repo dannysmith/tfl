@@ -41,8 +41,8 @@ describe TFL::Client do
     end
 
     it 'should parse the correct card id' do
-      expect(@tfl.cards.first.id).to eq('1wRXbW9Y4gzNpG8MhTorM2wRY1jg')
-      expect(@tfl.cards.last.id).to eq('J16kuCuoJhMzHf8Bc0udT7iWJ0BU')
+      expect(@tfl.cards.first.id).to eq('1wRXbW9Y4gzNpG8MhTorM2wRY1jg'[0..-8])
+      expect(@tfl.cards.last.id).to eq('J16kuCuoJhMzHf8Bc0udT7iWJ0BU'[0..-8])
     end
 
     it 'should never have duplicate cards due to successive calls' do
@@ -65,7 +65,7 @@ describe TFL::Client do
 
     it 'should have the correctly selected card id' do
       journeys = @tfl.journeys(date: @date)
-      expect(journeys.first.card_id).to eq(@card_id)
+      expect(journeys.first.card_id).to eq(@card_id[0..-8])
     end
 
     it 'should parse the correct amount of journeys for the date' do
