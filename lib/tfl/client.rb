@@ -41,7 +41,7 @@ module TFL
     # @return [Card] all cards for this user
     def cards(opts = {})
       @page = request('https://contactless.tfl.gov.uk/MyCards')
-      cards = @page.css('#contactless-card-list a[data-pageobject=mycards-card-cardlink]')
+      cards = @page.search('#contactless-card-list a[data-pageobject=mycards-card-cardlink]')
       cards.each do |c|
         card = TFL::Card.new
         card.id            = c.attributes['href'].value.to_s[/\/Card\/View\?pi=(.*)/,1]
@@ -110,7 +110,7 @@ module TFL
         login_handler
         select_options(opts)
       end
-      @current_card_id = @page.css('#CurrentCard').first.attributes['data-card-id'].value.to_s
+      @current_card_id = @page.search('#CurrentCard').first.attributes['data-card-id'].value.to_s
       @page
     end
 
