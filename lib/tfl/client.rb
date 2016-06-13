@@ -48,7 +48,7 @@ module TFL
         card.network       = c.css('h3.current-nickname span.sr-only').text.to_s[/(MasterCard|Visa)/]
         card.last_4_digits = c.css('span.view-card-nickname').text.to_s[/\d{4}/]
         card.expiry        = c.css('span[data-pageobject=view-card-cardexpiry]').text.to_s.strip
-        @cards << card
+        @cards << card unless @cards.find{|c| c.id == card.id}
       end
       @cards
     end

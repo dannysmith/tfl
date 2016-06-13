@@ -44,6 +44,11 @@ describe TFL::Client do
       expect(@tfl.cards.first.id).to eq('1wRXbW9Y4gzNpG8MhTorM2wRY1jg')
       expect(@tfl.cards.last.id).to eq('J16kuCuoJhMzHf8Bc0udT7iWJ0BU')
     end
+
+    it 'should never have duplicate cards due to successive calls' do
+      expect(@tfl.cards.count).to eq(2)
+      expect(@tfl.cards.count).to eq(2)
+    end
   end
 
   describe '#journeys' do
