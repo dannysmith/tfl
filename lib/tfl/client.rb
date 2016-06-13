@@ -44,7 +44,7 @@ module TFL
       cards = @page.search('#contactless-card-list a[data-pageobject=mycards-card-cardlink]')
       cards.each do |c|
         card = TFL::Card.new
-        card.id            = c.attributes['href'].value.to_s[/\/Card\/View\?pi=(.*)/,1][0..-8]
+        card.id            = c.attributes['href'].value.to_s[/\/Card\/View\?pi=(.*)/,1]
         card.network       = c.css('h3.current-nickname span.sr-only').text.to_s[/(MasterCard|Visa)/]
         card.last_4_digits = c.css('span.view-card-nickname').text.to_s[/\d{4}/]
         card.expiry        = c.css('span[data-pageobject=view-card-cardexpiry]').text.to_s.strip
@@ -110,7 +110,7 @@ module TFL
         login_handler
         select_options(opts)
       end
-      @current_card_id = @page.search('#CurrentCard').first.attributes['data-card-id'].value.to_s[0..-8]
+      @current_card_id = @page.search('#CurrentCard').first.attributes['data-card-id'].value
       @page
     end
 
@@ -138,9 +138,13 @@ module TFL
     def filtered_journeys(opts)
       date = Utils.date_normalizer(opts[:date])
       journeys = @journeys
-      journeys = journeys.select{|j| j.date == date} if opts[:date]
-      journeys = journeys.select{|j| j.card_id == opts[:card].id} if opts[:card]
+      journeys = journeys.select{ |j| j.date == date } if opts[:date]
+      journeys = journeys.select{ |j| compare_card_ids(j.card_id, opts[:card].id) } if opts[:card]
       journeys
+    end
+
+    def compare_card_ids(id1, id2)
+      id1[0..-8] == id2[0..-8]
     end
   end
 end
