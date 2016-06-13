@@ -99,6 +99,30 @@ describe TFL::Client do
       expect(journeys[2].time).to eq '15:46 - 16:18'
     end
 
+    it 'should parse the correct tap in and tap out datetimes' do
+      tube_journeys = @tfl.journeys(date: '2016-06-10')
+
+      # complete journey
+      # '09:32 - 10:20'
+      expect(tube_journeys[0].tapped_in_at).to eq '09:32'
+      expect(tube_journeys[0].tapped_out_at).to eq '10:20'
+
+      # forgot to tap out
+      # 15:08 - --:--
+      expect(tube_journeys[1].tapped_in_at).to eq '15:08'
+      expect(tube_journeys[1].tapped_out_at).to be_nil
+
+      # forgot to tap in
+      # --:-- - 16:47
+      expect(tube_journeys[2].tapped_in_at).to be_nil
+      expect(tube_journeys[2].tapped_out_at).to eq '16:47'
+
+      # 13:17
+      bus_journeys = @tfl.journeys(date: '2016-06-01')
+      expect(bus_journeys[0].tapped_in_at).to eq '13:17'
+      expect(bus_journeys[0].tapped_out_at).to be_nil
+    end
+
     it 'should parse the correct fare element' do
       journeys = @tfl.journeys(date: @date)
       expect(journeys[0].fare).to eq Money.new(290, :gbp)
