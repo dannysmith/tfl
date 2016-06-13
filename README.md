@@ -4,11 +4,6 @@ This is an unoffical library for scraping Transport for London contactless websi
 
 This gem is not actively maintained, and thus has/will not be published to Rubygems.
 
-## Todo
-
-- Currently this only looks up and returns journeys for the *first* contactless card.
-- It should be changed to return all the cards, and then to query specifically the journeys on each card.
-
 ## Installation
 
 Add this line to your application's Gemfile:
