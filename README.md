@@ -1,5 +1,7 @@
 # TFL
 
+[![Build Status](https://travis-ci.org/jameshill/tfl.svg?branch=master)](https://travis-ci.org/jameshill/tfl)
+
 This is an unoffical library for scraping Transport for London contactless website. Allows a user to get journey information by providing their TFL username and password.
 
 This gem is not actively maintained, and thus has/will not be published to Rubygems.
