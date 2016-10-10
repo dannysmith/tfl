@@ -101,7 +101,7 @@ module TFL
 
     def select_options(opts)
       period = date_period(opts[:date])
-      form = statement.forms[2]
+      form = statement.forms[3]
       form['PaymentCardId'] = [opts[:card].id] if opts[:card]
       form['SelectedStatementType'] = ['Payments'] # ['Journeys']
       form['SelectedStatementPeriod'] = [period]
