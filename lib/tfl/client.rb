@@ -46,7 +46,13 @@ module TFL
         card = TFL::Card.new
         card.id            = c.attributes['href'].value.to_s[/\/Card\/View\?pi=(.*)/,1]
         card.network       = c.css('h3.current-nickname span.sr-only').text.to_s[/(MasterCard|Visa)/]
-        card.last_4_digits = c.css('span.view-card-nickname').text.to_s[/\d{4}/]
+
+        card.last_4_digits = if c.css('span[data-pageobject="view-card-last4digits"]').empty? then
+          c.css('span.view-card-nickname').text.to_s[/\d{4}/]
+        else
+          c.css('span[data-pageobject="view-card-last4digits"]').text
+        end
+
         card.expiry        = c.css('span[data-pageobject=view-card-cardexpiry]').text.to_s.strip
         @cards << card unless @cards.find{|c| c.id == card.id}
       end
